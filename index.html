@@ -15,6 +15,17 @@
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
+    img.background {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      -webkit-filter: blur(5px);
+      filter: blur(5px);
+    }
+
     .bd-placeholder-img {
       font-size: 1.125rem;
       text-anchor: middle;
@@ -99,85 +110,93 @@
     .btn-secondary {
       background-color: rgb(121, 8, 15);
     }
+
+    .container {
+      background-color: rgb(255, 255, 255);
+      box-shadow: #0e8f48;
+    }
   </style>
 
 
 
-  <link href="carousel.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
 </head>
 
 <body>
+  <img class="background" src="../assets/brand/bg2.jpg" alt="bg img">
 
+  <div class="container mt-3">
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-gradient">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">AAMUSTED SCP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Department</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link enabled" href="#">Complains</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link enabled" href="#">Resolved</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link enabled" href="#">About</a>
+              </li>
+            </ul>
+            <u><a href="/sign-in/index.html"><button class="btn btn-outline-success" type="login">Login</button></a>
+              <button class="btn btn-outline-success" type="register">Register</button>
+            </u>
 
-
-
-  <header data-bs-theme="dark">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-gradient">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">AAMUSTED SCP</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Department</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link enabled" href="#">Complains</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link enabled" href="#">Resolved</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link enabled" href="#">About</a>
-            </li>
-          </ul>
-          <u><a href="/sign-in/index.html"><button class="btn btn-outline-success" type="login" >Login</button></a>
-            <button class="btn btn-outline-success" type="register">Register</button>
-          </u>
-
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <main>
-    <br>
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">STUDENT COMPLAINT PORTAL</h1>
-          <p class="lead text-body-secondary">The Akenten Appiah-Menka University of Skills Training and Entrepreneurial
-            Development (AAMUSTED) is Ghana’s foremost Technical and Vocational Education and Training (TVET) and
-            Entrepreneurship Teacher Education Institution. AAMUSTED is home to top-notch professionals who handle our
-            expertly crafted TVET programmes and others including Languages and Business.</p>
-          <p>
-            <a href="/sign-in/index.html" class="btn btn-primary my-2">Lodge Complain</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary Action</a>
-          </p>
+    <main>
+      <br>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">STUDENT COMPLAINT PORTAL</h1>
+            <p class="lead text-body-secondary">The Akenten Appiah-Menka University of Skills Training and
+              Entrepreneurial
+              Development (AAMUSTED) is Ghana’s foremost Technical and Vocational Education and Training (TVET) and
+              Entrepreneurship Teacher Education Institution. AAMUSTED is home to top-notch professionals who handle our
+              expertly crafted TVET programmes and others including Languages and Business.</p>
+            <p>
+              <a href="/sign-in/index.html" class="btn btn-primary my-2">Lodge Complain</a>
+              <a href="#" class="btn btn-secondary my-2">Secondary Action</a>
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+  </div>
+
+
+  </section>
 
 
 
 
 
 
+  </div>
+
+
+
+  <footer class="footer mt-auto py-3 bg-body-tertiary">
+    <div class="container">
+      <span class="text-body-secondary">AAMUSTED SCP 2023.</span>
     </div>
-
-
-
-    <footer class="footer mt-auto py-3 bg-body-tertiary">
-      <div class="container">
-        <span class="text-body-secondary">AAMUSTED SCP 2023.</span>
-      </div>
-    </footer>
+  </footer>
 
   </main>
 
