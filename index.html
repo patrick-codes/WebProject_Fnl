@@ -6,13 +6,14 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.111.3">
   <title>AAMUSTED SCP</title>
 
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/navbars.css" rel="stylesheet">
+  <link href="/css/new.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 
   <style>
     img.background {
@@ -67,34 +68,6 @@
       overflow-y: hidden;
     }
 
-    .nav-scroller .nav {
-      display: flex;
-      flex-wrap: nowrap;
-      padding-bottom: 1rem;
-      margin-top: -1px;
-      overflow-x: auto;
-      text-align: center;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .btn-bd-primary {
-      --bd-violet-bg: #712cf9;
-      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-      --bs-btn-font-weight: 600;
-      --bs-btn-color: var(--bs-white);
-      --bs-btn-bg: var(--bd-violet-bg);
-      --bs-btn-border-color: var(--bd-violet-bg);
-      --bs-btn-hover-color: var(--bs-white);
-      --bs-btn-hover-bg: #6528e0;
-      --bs-btn-hover-border-color: #6528e0;
-      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-      --bs-btn-active-color: var(--bs-btn-hover-color);
-      --bs-btn-active-bg: #5a23c8;
-      --bs-btn-active-border-color: #5a23c8;
-    }
-
     .bd-mode-toggle {
       z-index: 1500;
     }
@@ -115,6 +88,20 @@
       background-color: rgb(255, 255, 255);
       box-shadow: #0e8f48;
     }
+
+
+    .carousel {
+  margin-bottom: 4rem;
+}
+.carousel-caption {
+  bottom: 0rem;
+  z-index: 5;
+}
+
+.carousel-item {
+  height: 20rem;
+}
+
   </style>
 
 
@@ -137,23 +124,21 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Department</a>
-              </li>
+                <a class="nav-link enabled " href="admissions.html">Admissions Unit</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link enabled" href="newsfile.html">News & Updates</a>
+            </li>
+            
               <li class="nav-item">
-                <a class="nav-link enabled" href="#">Complains</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link enabled" href="#">Resolved</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link enabled" href="#">About</a>
+                <a class="nav-link enabled" href="about.html">About</a>
               </li>
             </ul>
-            <u><a href="/sign-in/index.html"><button class="btn btn-outline-success" type="login">Login</button></a>
-              <button class="btn btn-outline-success" type="register">Register</button>
+            <u><a href="./sign-in/login.html"><button class="btn btn-info" type="login">Login</button></a>
+              <a href="./sign-in/regist.html"><button class="btn btn-warning" type="register">Register</button></a>
             </u>
 
           </div>
@@ -162,35 +147,64 @@
     </header>
 
     <main>
-      <br>
-      <section class="py-5 text-center container">
-        <div class="row py-lg-5">
-          <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light">STUDENT COMPLAINT PORTAL</h1>
+
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+  
+  
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/cross-country-1.jpg" alt="img1" class="d-block w-100" style="height: 600px; width: 200px;">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/kstu1-2048x1365.jpg" alt="img2" class="d-block w-100" style="height: 600px; width: 200px;">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/gusa-new.jpg" alt="img2" class="d-block w-100" style="height: 600px; width: 200px;">
+          </div>
+        </div>
+  
+  
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="img/Screen-Shot-2017-02-16-at-1.19.49-PM.jpg" class="d-block mx-lg-auto img-fluid" alt="people img" width="900"
+              height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">STUDENT COMPLAINT PORTAL</h1>
             <p class="lead text-body-secondary">The Akenten Appiah-Menka University of Skills Training and
               Entrepreneurial
               Development (AAMUSTED) is Ghana’s foremost Technical and Vocational Education and Training (TVET) and
               Entrepreneurship Teacher Education Institution. AAMUSTED is home to top-notch professionals who handle our
               expertly crafted TVET programmes and others including Languages and Business.</p>
-            <p>
-              <a href="/sign-in/index.html" class="btn btn-primary my-2">Lodge Complain</a>
-              <a href="#" class="btn btn-secondary my-2">Secondary Action</a>
-            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+             <a href="./sign-in/login.html"><button type="button" class="btn btn-primary my-2">Lodge Complain</button></a>
+             <a href="./newsfile.html"><button type="button" class="btn btn-secondary my-2">News & Updates</button></a>
+            </div>
           </div>
         </div>
-  </div>
+      </div>
 
 
-  </section>
-
-
-
-
+      </section>
+      
 
 
   </div>
-
-
 
   <footer class="footer mt-auto py-3 bg-body-tertiary">
     <div class="container">
@@ -201,7 +215,9 @@
   </main>
 
 
-  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
 
 
 </body>

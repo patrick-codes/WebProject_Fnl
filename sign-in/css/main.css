@@ -1,0 +1,7 @@
+body {
+  /*background-image: url('/img/c1.jpg');*/
+  padding-top: 3.5rem;
+  padding-bottom: 0rem;
+  color: rgb(var(--bs-tertiary-color-rgb));
+}
+
